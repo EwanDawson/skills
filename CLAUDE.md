@@ -7,7 +7,7 @@ Skills are organized into bucket folders under `skills/`:
 - `in-progress/` — drafts not yet ready to ship
 - `deprecated/` — no longer used
 
-Every skill in `engineering/`, `productivity/`, or `misc/` must have a reference in the top-level `README.md` and a `.agents/skills/<name>` relative symlink pointing into its bucket directory (e.g. `.agents/skills/grill-me -> ../../skills/productivity/grill-me`). The flat `.agents/skills/` tree is the convention coding agents look at to discover skills automatically from a fresh clone — keep it in sync when skills are added, removed, or promoted between buckets. Skills in `personal/`, `in-progress/`, and `deprecated/` must not appear in either.
+Every skill in `engineering/`, `productivity/`, or `misc/` must have a reference in the top-level `README.md` and a copy of its directory at `.agents/skills/<name>` (e.g. the contents of `skills/productivity/grill-me/` copied to `.agents/skills/grill-me/`). The flat `.agents/skills/` tree is the convention coding agents look at to discover skills automatically from a fresh clone — keep it in sync when skills are added, removed, or promoted between buckets. Skills in `personal/`, `in-progress/`, and `deprecated/` must not appear in either.
 
 Each skill entry in the top-level `README.md` must link the skill name to its `SKILL.md`.
 
